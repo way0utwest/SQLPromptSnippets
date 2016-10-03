@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>cdb</Title>
+      <Shortcut>cdb</Shortcut>
+      <Description>Create database</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>database_name</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[CREATE DATABASE $database_name$
+ON
+PRIMARY ( 
+  NAME = $database_name$_data,
+  FILENAME = 'E:\SQLServer\MSSQL12.SQL2014\MSSQL\DATA\$database_name$.mdf'
+, SIZE = 51200KB , FILEGROWTH = 10240KB) 
+LOG ON
+(
+  NAME = $database_name$_tlog,
+  FILENAME = 'E:\SQLServer\MSSQL12.SQL2014\MSSQL\Log\$database_name$.ldf'
+, SIZE = 25600KB , FILEGROWTH = 10240KB ) 
+WITH
+  TRUSTWORTHY ON
+GO
+ALTER DATABASE [MyNewdb] SET AUTO_CREATE_STATISTICS ON(INCREMENTAL = OFF)
+GO
+ALTER DATABASE [MyNewdb] SET RECOVERY SIMPLE 
+GO
+ALTER DATABASE [MyNewdb] SET PAGE_VERIFY CHECKSUM  
+GO
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

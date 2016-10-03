@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>cl</Title>
+      <Shortcut>cl</Shortcut>
+      <Description>Create login</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>username</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[CREATE LOGIN [$username$]
+WITH PASSWORD = N'Someth!ngR#@lly$tr0ng' MUST_CHANGE,
+    DEFAULT_DATABASE = [Sandbox],
+    DEFAULT_LANGUAGE = [us_english],
+    CHECK_EXPIRATION = ON,
+    CHECK_POLICY = ON;
+GO
+USE [Sandbox];
+GO
+CREATE USER [$username$] FOR LOGIN [$username$];
+GO
+USE [Sandbox];
+GO
+ALTER ROLE [AppTest] ADD MEMBER [$username$];
+GO]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
