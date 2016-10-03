@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>tt</Title>
+      <Shortcut>tt</Shortcut>
+      <Description>Tally Table for 100 numbers</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[WITH myTally(n)
+AS
+(SELECT n = ROW_NUMBER() OVER (ORDER BY (SELECT null))
+ FROM (VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9), (10)) a(n)
+  CROSS JOIN (VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9), (10)) b(n)
+)
+SELECT *
+FROM myTally]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
