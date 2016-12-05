@@ -4,38 +4,14 @@
     <Header>
       <Title>cl</Title>
       <Shortcut>cl</Shortcut>
-<<<<<<< HEAD
       <Description>CREATE SQL Server login</Description>
-=======
       <Description>Create login</Description>
->>>>>>> 99383ceb7dd039199bc594b5d6c628a55657a814
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
     </Header>
     <Snippet>
-<<<<<<< HEAD
-      <Declarations />
-      <Code Language="sql"><![CDATA[CREATE LOGIN $CURSOR$ /* Add WITH or FROM (below) as appropriate */
---WITH
---  PASSWORD = 'password' /* HASHED */ /* MUST CHANGE */
---  SID = sid
---  DEFAULT_DATABASE = database
---  DEFAULT_LANGUAGE = language
---  CHECK_EXPIRATION = ON | OFF
---  CHECK_POLICY = ON | OFF
---  CREDENTIAL = credential_name
---FROM
---  WINDOWS
---    WITH
---      DEFAULT_DATABASE = database
---      DEFAULT_LANGUAGE = language
---  CERTIFICATE certificate_name
---  ASYMMETRIC KEY key_name
-GO
-]]></Code>
-=======
       <Declarations>
         <Literal>
           <ID>username</ID>
@@ -58,7 +34,6 @@ USE [Sandbox];
 GO
 ALTER ROLE [AppTest] ADD MEMBER [$username$];
 GO]]></Code>
->>>>>>> 99383ceb7dd039199bc594b5d6c628a55657a814
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
