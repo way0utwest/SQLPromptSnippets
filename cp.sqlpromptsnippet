@@ -15,21 +15,6 @@
         <Literal>
           <ID>procedure_name</ID>
           <ToolTip />
-          <Default>[schema].[procedure_name]</Default>
-        </Literal>
-      </Declarations>
-      <Code Language="sql"><![CDATA[--SET QUOTED_IDENTIFIER ON|OFF
---SET ANSI_NULLS ON|OFF
---GO
-CREATE PROCEDURE $procedure_name$
-    @parameter_name AS INT
--- WITH ENCRYPTION, RECOMPILE, EXECUTE AS CALLER|SELF|OWNER| 'user_name'
-AS
-    $CURSOR$
-GO
---SET QUOTED_IDENTIFIER ON|OFF
---SET ANSI_NULLS ON|OFF
---GO]]></Code>
           <Default />
         </Literal>
         <Literal>
