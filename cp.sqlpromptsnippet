@@ -15,6 +15,7 @@
         <Literal>
           <ID>procedure_name</ID>
           <ToolTip />
+<<<<<<< HEAD
           <Default>[schema].[procedure_name]</Default>
         </Literal>
       </Declarations>
@@ -30,6 +31,30 @@ GO
 --SET QUOTED_IDENTIFIER ON|OFF
 --SET ANSI_NULLS ON|OFF
 --GO]]></Code>
+=======
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>role_name</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[CREATE PROCEDURE $procedure_name$
+
+/*
+Description:
+
+Changes:
+Date       Who Notes
+---------- --- ---------------------------------------------------
+*/
+AS
+
+GO
+
+GRANT EXECUTE ON $procedure_name$ TO $role_name$]]></Code>
+>>>>>>> 99383ceb7dd039199bc594b5d6c628a55657a814
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

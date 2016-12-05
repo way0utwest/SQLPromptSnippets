@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>demoxpcmdi</Title>
+      <Shortcut>demoxpcmdi</Shortcut>
+      <Description>Demo the XP_CMDshell call to SQL CI</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[exec xp_cmdshell 'sqlci.exe --Build /scriptsFolder=WidgetShop\Database\Scriptsfolder /packageId=WidgetShop /packageVersion=1.0]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

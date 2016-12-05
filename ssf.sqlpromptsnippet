@@ -12,7 +12,14 @@
     </Header>
     <Snippet>
       <Declarations />
+<<<<<<< HEAD
       <Code Language="sql"><![CDATA[SELECT * FROM ]]></Code>
+=======
+      <Code Language="sql"><![CDATA[SELECT top 10
+ *
+ FROM $CURSOR$
+ ]]></Code>
+>>>>>>> 99383ceb7dd039199bc594b5d6c628a55657a814
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

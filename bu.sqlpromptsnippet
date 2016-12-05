@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>bu</Title>
+      <Shortcut>bu</Shortcut>
+      <Description>Backup database copy only</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>databasename</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[BACKUP DATABASE $databasename$ 
+ TO DISK = 'F:\SQL Server\Backup\$databasename$.bak' 
+ WITH COPY_ONLY;
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
