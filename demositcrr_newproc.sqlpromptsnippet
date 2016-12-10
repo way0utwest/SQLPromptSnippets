@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>demositcrr_newproc</Title>
+      <Shortcut>demositcrr_newproc</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[CREATE PROCEDURE [dbo].[CheckUserName]
+@username VARCHAR(200) = null
+AS
+IF EXISTS( SELECT userid FROM dbo.UserLogins
+WHERE Username = @username)
+ RETURN -1
+else
+RETURN 0
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

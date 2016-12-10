@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>erhndl</Title>
+      <Shortcut>erhndl</Shortcut>
+      <Description>Error handling snippet</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[EXEC dbo.uspLogError 
+     @CustomErrMsg = '$CURSOR$', 
+     @ErrorLogID = @ErrorLogID OUTPUT;
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

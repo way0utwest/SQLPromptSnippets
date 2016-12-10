@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>demositcrr_newtable</Title>
+      <Shortcut>demositcrr_newtable</Shortcut>
+      <Description />
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[CREATE TABLE SQLintheCity
+( Virtual2016 INT)
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -29,14 +29,20 @@
 Description:
 
 Changes:
-Date       Who Notes
----------- --- ---------------------------------------------------
+Date       Who         Notes
+---------- ---         ---------------------------------------------------
+$DATE$  $USER$    $CURSOR$
 */
 AS
-
+BEGIN
+$SELECTEDTEXT$
+RETURN
+END
 GO
 
-GRANT EXECUTE ON $procedure_name$ TO $role_name$]]></Code>
+GRANT EXECUTE ON $procedure_name$ TO $role_name$
+go
+]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
