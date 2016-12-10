@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>test</Title>
+      <Shortcut>test</Shortcut>
+      <Description>my test</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>procedure_name</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>role_name</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[CREATE PROCEDURE $procedure_name$
+
+/*
+Description:
+
+Changes:
+Date       Who Notes
+---------- --- ---------------------------------------------------
+*/
+AS
+
+GO
+
+GRANT EXECUTE ON $procedure_name$ TO $role_name$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

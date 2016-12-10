@@ -20,14 +20,23 @@
       </Declarations>
       <Code Language="sql"><![CDATA[CREATE DATABASE $database_name$
 ON
+PRIMARY ( -- or use FILEGROUP filegroup_name
+  NAME = $database_name$_data,
+  FILENAME = '$database_name$.mdf'
+) --, and repeat as required
+LOG ON
+(
+  NAME = $database_name$_log,
+  FILENAME = '$database_name$.ldf'
+)
 PRIMARY ( 
   NAME = $database_name$_data,
-  FILENAME = 'E:\SQLServer\MSSQL12.SQL2014\MSSQL\DATA\$database_name$.mdf'
+  FILENAME = '$database_name$.mdf'
 , SIZE = 51200KB , FILEGROWTH = 10240KB) 
 LOG ON
 (
   NAME = $database_name$_tlog,
-  FILENAME = 'E:\SQLServer\MSSQL12.SQL2014\MSSQL\Log\$database_name$.ldf'
+  FILENAME = '$database_name$.ldf'
 , SIZE = 25600KB , FILEGROWTH = 10240KB ) 
 WITH
   TRUSTWORTHY ON

@@ -4,6 +4,7 @@
     <Header>
       <Title>cl</Title>
       <Shortcut>cl</Shortcut>
+      <Description>CREATE SQL Server login</Description>
       <Description>Create login</Description>
       <Author />
       <SnippetTypes>
