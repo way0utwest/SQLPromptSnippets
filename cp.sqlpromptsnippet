@@ -24,7 +24,7 @@
         </Literal>
       </Declarations>
       <Code Language="sql"><![CDATA[CREATE PROCEDURE $procedure_name$
-
+  $CURSOR$
 /*
 Description:
 
@@ -39,9 +39,10 @@ $SELECTEDTEXT$
 RETURN
 END
 GO
-
+/*
 GRANT EXECUTE ON $procedure_name$ TO $role_name$
 go
+*/
 ]]></Code>
     </Snippet>
   </CodeSnippet>
