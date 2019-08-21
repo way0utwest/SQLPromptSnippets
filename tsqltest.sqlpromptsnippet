@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>tsqltest</Title>
+      <Shortcut>tsqltest</Shortcut>
+      <Description>New tsqlt test outline</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>testschema</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>testprocedure</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[EXEC tsqlt.NewTestClass @ClassName = N'$testschema$' -- nvarchar(max)
+GO
+CREATE PROCEDURE [$testschema$].[test $testprocedure$]
+AS
+BEGIN
+    --------------------------------------------
+	----- Assemble
+	--------------------------------------------
+    DECLARE @expected INT
+	      , @actual INT
+
+    $CURSOR$
+    --------------------------------------------
+	----- Act
+	--------------------------------------------
+
+
+    --------------------------------------------
+	----- Assert
+	--------------------------------------------
+	EXEC tsqlt.AssertEquals @Expected = @expected, 
+	                        @Actual = @actual,   
+	                        @Message = N'Incorrect result'
+	
+END    
+GO
+
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
