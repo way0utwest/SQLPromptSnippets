@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>cs_articlejoin</Title>
+      <Shortcut>cs_articlejoin</Shortcut>
+      <Description>Demo code for article joins</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[Articles as ars
+inner join Contacts as c
+on a.AuthorID = c.ContactsID]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
