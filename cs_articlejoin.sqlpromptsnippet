@@ -13,8 +13,8 @@
     <Snippet>
       <Declarations />
       <Code Language="sql"><![CDATA[Articles as ars
-inner join Contacts as c
-on a.AuthorID = c.ContactsID]]></Code>
+inner join Contacts
+on ars.AuthorID = ContactsID]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
