@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ctcustom</Title>
+      <Shortcut>ctcustom</Shortcut>
+      <Description>Create Custom table according to our standards</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>MyTable</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[CREATE TABLE $MyTable$ (
+ $MyTable$Key INT IDENTITY(1,1) NOT NULL CONSTRAINT $MyTable$PK PRIMARY KEY
+ , $CURSOR$ 
+)
+GO
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
