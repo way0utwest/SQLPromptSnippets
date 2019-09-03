@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>ii_cs_rssfeed</Title>
-      <Shortcut>ii_cs_rssfeed</Shortcut>
-      <Description>Insert data into rssfeeds</Description>
+      <Title>ii_rssfeed</Title>
+      <Shortcut>ii_rssfeed</Shortcut>
+      <Description>sdf</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,7 +13,7 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>feedname</ID>
+          <ID>FeedName</ID>
           <ToolTip />
           <Default />
         </Literal>
@@ -23,7 +23,7 @@
           <Default>1</Default>
         </Literal>
         <Literal>
-          <ID>fbflag</ID>
+          <ID>Feedburner</ID>
           <ToolTip />
           <Default>1</Default>
         </Literal>
@@ -31,12 +31,11 @@
       <Code Language="sql"><![CDATA[INSERT INTO dbo.RSSFeeds
 (FeedName, Checked, FeedBurner, ModifiedDate)
 VALUES
-(   '$feedname$' 
-  , $checked$    
-  , $fbflag$     
+(   '$FeedName$'
+  , $checked$
+  , $Feedburner$
   , SYSDATETIME()
-);
-go
+    )
 ]]></Code>
     </Snippet>
   </CodeSnippet>
