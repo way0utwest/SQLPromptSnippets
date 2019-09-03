@@ -16,9 +16,12 @@
 EXEC tsqlt.faketable @TableName = 'Contacts', @SchemaName = 'dbo';
 
 INSERT dbo.Contacts
-(ContactFullName, Address1, Address2,CountryCode, Email)
+(ContactsID, ContactFullName, Address1, Address2,CountryCode, Email)
 VALUES
-(N'John Doe', N'123 My St', N'New York, NY 21223', N'USA', N'jdoe@myspace.example');
+(1, N'Louis Davidson', N'17 High Street', N'Darlington', N'USA', N'Louis.Davidson@example.com')
+, (2, N'Adam Machanic', N'37 Green Lane', N'Portsmouth', N'USA', N'Adam.Machanic@example.com')
+, (3, N'Francis Hanlon', N'33 George Street', N'Llandudno', N'USA', N'Francis.Hanlon@example.com')
+;
 
 EXEC tsqlt.FakeTable @TableName = N'ArticlePayment',        -- nvarchar(max)
                      @SchemaName = N'dbo'

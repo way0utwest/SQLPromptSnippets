@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ii_cs_rssfeed</Title>
+      <Shortcut>ii_cs_rssfeed</Shortcut>
+      <Description>Insert data into rssfeeds</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>feedname</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>checked</ID>
+          <ToolTip />
+          <Default>1</Default>
+        </Literal>
+        <Literal>
+          <ID>fbflag</ID>
+          <ToolTip />
+          <Default>1</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[INSERT INTO dbo.RSSFeeds
+(FeedName, Checked, FeedBurner, ModifiedDate)
+VALUES
+(   '$feedname$' 
+  , $checked$    
+  , $fbflag$     
+  , SYSDATETIME()
+);
+go
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

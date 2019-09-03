@@ -13,12 +13,17 @@
     <Snippet>
       <Declarations>
         <Literal>
+          <ID>schema</ID>
+          <ToolTip />
+          <Default>dbo</Default>
+        </Literal>
+        <Literal>
           <ID>MyTable</ID>
           <ToolTip />
-          <Default />
+          <Default>dbo</Default>
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[CREATE TABLE $MyTable$ (
+      <Code Language="sql"><![CDATA[CREATE TABLE $schema$.$MyTable$ (
  $MyTable$Key INT IDENTITY(1,1) NOT NULL CONSTRAINT $MyTable$PK PRIMARY KEY
  , $CURSOR$ 
 )
