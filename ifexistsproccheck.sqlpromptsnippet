@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ifexistsproccheck</Title>
+      <Shortcut>ifexistsproccheck</Shortcut>
+      <Description>Check for an object</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>myproc</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[IF NOT EXISTS( SELECT name FROM sys.objects o WHERE o.name = '$myproc$')
+ CREATE PROCEDURE $myproc$
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

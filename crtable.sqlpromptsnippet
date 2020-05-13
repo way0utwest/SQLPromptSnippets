@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>crtable</Title>
+      <Shortcut>crtable</Shortcut>
+      <Description>Create table template</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>schemaname</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>TableName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[CREATE TABLE $schemaname$.$TableName$
+( $TableName$Key INT NOT NULL CONSTRAINT $TableName$PK PRIMARY KEY
+  $CURSOR$
+)
+GO
+CREATE INDEX $TableName$_ ON dbo.$TableName$ ()
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
