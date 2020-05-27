@@ -12,7 +12,9 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SELECT TOP 100 * FROM ]]></Code>
+      <Code Language="sql"><![CDATA[SELECT TOP 100
+*
+FROM $CURSOR$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
