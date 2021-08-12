@@ -1,0 +1,8 @@
+{
+  "id": "3ecd8f46-d9c4-4814-bdf9-e9d67f5468e2",
+  "name": "demo",
+  "prefix": "demo",
+  "description": "demo snippet",
+  "body": "select * from product",
+  "placeholders": []
+}

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>cpTest2</Title>
+      <Shortcut>cpTest2</Shortcut>
+      <Description> proc</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>schemaname</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>procname</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[create procedure $schemaname$.$procname$
+as
+begin
+end
+go
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

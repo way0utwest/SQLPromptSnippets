@@ -1,0 +1,8 @@
+{
+  "id": "671a03e7-42b4-4154-a854-2a9866a85df2",
+  "name": "erhndl",
+  "prefix": "erhndl",
+  "description": "Error handling snippet",
+  "body": "EXEC dbo.uspLogError \n     @CustomErrMsg = '$CURSOR$', \n     @ErrorLogID = @ErrorLogID OUTPUT;\n",
+  "placeholders": []
+}

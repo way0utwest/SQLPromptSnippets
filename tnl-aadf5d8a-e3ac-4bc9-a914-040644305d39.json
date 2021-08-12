@@ -1,0 +1,8 @@
+{
+  "id": "aadf5d8a-e3ac-4bc9-a914-040644305d39",
+  "name": "",
+  "prefix": "tnl",
+  "description": "Table NoLock",
+  "body": "$SELECTEDTEXT$ (NOLOCK)",
+  "placeholders": []
+}

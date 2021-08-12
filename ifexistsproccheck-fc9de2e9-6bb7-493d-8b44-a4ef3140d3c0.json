@@ -1,0 +1,13 @@
+{
+  "id": "fc9de2e9-6bb7-493d-8b44-a4ef3140d3c0",
+  "name": "ifexistsproccheck",
+  "prefix": "ifexistsproccheck",
+  "description": "Check for an object",
+  "body": "IF NOT EXISTS( SELECT name FROM sys.objects o WHERE o.name = '$myproc$')\n CREATE PROCEDURE $myproc$\n",
+  "placeholders": [
+    {
+      "name": "myproc",
+      "defaultValue": ""
+    }
+  ]
+}

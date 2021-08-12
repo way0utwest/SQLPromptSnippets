@@ -29,9 +29,9 @@
 Description:
 
 Changes:
-Date       Who         Notes
----------- ---         ---------------------------------------------------
-$DATE$  $USER$    $CURSOR$
+Date       Who              Notes
+---------- ---              ---------------------------------------------------
+$DATE$  $USER$         $CURSOR$
 */
 AS
 BEGIN

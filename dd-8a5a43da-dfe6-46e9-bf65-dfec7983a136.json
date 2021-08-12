@@ -1,0 +1,8 @@
+{
+  "id": "8a5a43da-dfe6-46e9-bf65-dfec7983a136",
+  "name": "dd",
+  "prefix": "dd",
+  "description": "Drop database",
+  "body": "DROP DATABASE ",
+  "placeholders": []
+}

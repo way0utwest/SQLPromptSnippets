@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>iirss</Title>
+      <Shortcut>iirss</Shortcut>
+      <Description>insert into rss</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[INSERT INTO dbo.RSSFeeds
+    (FeedName, Checked, FeedBurner, ModifiedDate)
+VALUES
+    ('$SELECTEDTEXT$', 1, ,0 , SYSDATETIME())]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

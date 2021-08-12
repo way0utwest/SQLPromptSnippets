@@ -1,0 +1,8 @@
+{
+  "id": "c4534800-f24a-46b2-8d6d-8d067094e8a1",
+  "name": "ing_02discount",
+  "prefix": "ing_02discount",
+  "description": "Fill out a discount table",
+  "body": "DiscountAmount numeric(5,2), StartDate date, EndDate date, Active bit\n$CURSOR$\n",
+  "placeholders": []
+}

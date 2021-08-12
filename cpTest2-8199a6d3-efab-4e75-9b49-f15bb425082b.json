@@ -1,0 +1,17 @@
+{
+  "id": "8199a6d3-efab-4e75-9b49-f15bb425082b",
+  "name": "cpTest2",
+  "prefix": "cpTest2",
+  "description": " proc",
+  "body": "create procedure $schemaname$.$procname$\nas\nbegin\nend\ngo\n",
+  "placeholders": [
+    {
+      "name": "schemaname",
+      "defaultValue": ""
+    },
+    {
+      "name": "procname",
+      "defaultValue": ""
+    }
+  ]
+}

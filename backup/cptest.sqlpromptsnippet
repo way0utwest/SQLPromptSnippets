@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>test</Title>
-      <Shortcut>test</Shortcut>
-      <Description>my test</Description>
+      <Title>cptest</Title>
+      <Shortcut>cptest</Shortcut>
+      <Description>my test proc snippet</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,17 +13,17 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>procedure_name</ID>
+          <ID>procedurename</ID>
           <ToolTip />
           <Default />
         </Literal>
         <Literal>
-          <ID>role_name</ID>
+          <ID>rolename</ID>
           <ToolTip />
           <Default />
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[CREATE PROCEDURE $procedure_name$
+      <Code Language="sql"><![CDATA[CREATE PROCEDURE $procedurename$
 
 /*
 Description:
@@ -36,7 +36,7 @@ AS
 
 GO
 
-GRANT EXECUTE ON $procedure_name$ TO $role_name$]]></Code>
+GRANT EXECUTE ON $procedurename$ TO $rolename$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

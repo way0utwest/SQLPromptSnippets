@@ -1,0 +1,17 @@
+{
+  "id": "6868ac8a-6307-41c9-90cb-5b0d740bb366",
+  "name": "ctcustom",
+  "prefix": "ctcustom",
+  "description": "Create Custom table according to our standards",
+  "body": "CREATE TABLE $schema$.$MyTable$ (\n $MyTable$Key INT IDENTITY(1,1) NOT NULL CONSTRAINT $MyTable$PK PRIMARY KEY\n , $CURSOR$ \n)\nGO\n",
+  "placeholders": [
+    {
+      "name": "schema",
+      "defaultValue": "dbo"
+    },
+    {
+      "name": "MyTable",
+      "defaultValue": ""
+    }
+  ]
+}

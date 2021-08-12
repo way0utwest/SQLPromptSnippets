@@ -1,0 +1,8 @@
+{
+  "id": "2049deee-d8bd-4375-a1fd-dd048c975340",
+  "name": "mro",
+  "prefix": "mro",
+  "description": "Retrieve 20 most recently created objects",
+  "body": "SELECT TOP 20 [name], [type], crdate\nFROM sysobjects\nORDER BY crdate DESC",
+  "placeholders": []
+}

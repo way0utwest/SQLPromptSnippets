@@ -1,0 +1,17 @@
+{
+  "id": "ca9ed987-f983-4aa2-986c-cf8b98a384a6",
+  "name": "crtable",
+  "prefix": "crtable",
+  "description": "Create table template",
+  "body": "CREATE TABLE $schemaname$.$TableName$\n( $TableName$Key INT NOT NULL CONSTRAINT $TableName$PK PRIMARY KEY\n  $CURSOR$\n)\nGO\nCREATE INDEX $TableName$_ ON dbo.$TableName$ ()\n",
+  "placeholders": [
+    {
+      "name": "schemaname",
+      "defaultValue": ""
+    },
+    {
+      "name": "TableName",
+      "defaultValue": ""
+    }
+  ]
+}

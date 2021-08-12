@@ -1,0 +1,8 @@
+{
+  "id": "d0ea72bd-b296-44f0-934b-e9f70186f791",
+  "name": "cs_articlejoin",
+  "prefix": "cs_articlejoin",
+  "description": "Demo code for article joins",
+  "body": "dbo.Articles as ars\ninner join dbo.Contacts  as cntc\non ars.AuthorID = cntc.ContactsID",
+  "placeholders": []
+}

@@ -1,0 +1,8 @@
+{
+  "id": "f0ae5105-13e2-4dbd-b094-eaf1b1d68175",
+  "name": "iirss",
+  "prefix": "iirss",
+  "description": "insert into rss",
+  "body": "INSERT INTO dbo.RSSFeeds\n    (FeedName, Checked, FeedBurner, ModifiedDate)\nVALUES\n    ('$SELECTEDTEXT$', 1, ,0 , SYSDATETIME())",
+  "placeholders": []
+}

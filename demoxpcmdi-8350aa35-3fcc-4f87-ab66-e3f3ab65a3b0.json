@@ -1,0 +1,8 @@
+{
+  "id": "8350aa35-3fcc-4f87-ab66-e3f3ab65a3b0",
+  "name": "demoxpcmdi",
+  "prefix": "demoxpcmdi",
+  "description": "Demo the XP_CMDshell call to SQL CI",
+  "body": "exec xp_cmdshell 'sqlci.exe --Build /scriptsFolder=WidgetShop\\Database\\Scriptsfolder /packageId=WidgetShop /packageVersion=1.0",
+  "placeholders": []
+}

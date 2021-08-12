@@ -1,0 +1,8 @@
+{
+  "id": "20d9fe4d-6491-47a6-9575-2d53cd9b6ef7",
+  "name": "is",
+  "prefix": "is",
+  "description": "INFORMATION_SCHEMA fragment",
+  "body": "INFORMATION_SCHEMA",
+  "placeholders": []
+}

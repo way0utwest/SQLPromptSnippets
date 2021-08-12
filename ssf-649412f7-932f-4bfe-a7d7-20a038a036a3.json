@@ -1,0 +1,8 @@
+{
+  "id": "649412f7-932f-4bfe-a7d7-20a038a036a3",
+  "name": "ssf",
+  "prefix": "ssf",
+  "description": "SELECT * FROM fragment",
+  "body": "SELECT top 10\n *\n FROM $CURSOR$\n ",
+  "placeholders": []
+}

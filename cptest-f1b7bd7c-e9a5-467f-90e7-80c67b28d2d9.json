@@ -1,0 +1,17 @@
+{
+  "id": "f1b7bd7c-e9a5-467f-90e7-80c67b28d2d9",
+  "name": "cptest",
+  "prefix": "cptest",
+  "description": "my test proc snippet",
+  "body": "CREATE PROCEDURE $procedurename$\n\n/*\nDescription:\n\nChanges:\nDate       Who Notes\n---------- --- ---------------------------------------------------\n*/\nAS\n\nGO\n\nGRANT EXECUTE ON $procedurename$ TO $rolename$",
+  "placeholders": [
+    {
+      "name": "procedurename",
+      "defaultValue": ""
+    },
+    {
+      "name": "rolename",
+      "defaultValue": ""
+    }
+  ]
+}

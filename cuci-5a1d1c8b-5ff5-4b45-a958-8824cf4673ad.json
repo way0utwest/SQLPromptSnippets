@@ -1,0 +1,21 @@
+{
+  "id": "5a1d1c8b-5ff5-4b45-a958-8824cf4673ad",
+  "name": "cuci",
+  "prefix": "cuci",
+  "description": "Create unique clustered index",
+  "body": "CREATE UNIQUE CLUSTERED INDEX $index_name$\nON $owner$ ( $column$ )\n--WITH PAD_INDEX\n--    | FILLFACTOR = fillfactor\n--    | IGNORE_DUP_KEY\n--    | DROP_EXISTING\n--    | STATISTICS_NORECOMPUTE\n--    | SORT_IN_TEMPDB, .. as required\n-- ON filegroup\nGO\n",
+  "placeholders": [
+    {
+      "name": "owner",
+      "defaultValue": "[schema].[owner_name]"
+    },
+    {
+      "name": "column",
+      "defaultValue": ""
+    },
+    {
+      "name": "index_name",
+      "defaultValue": ""
+    }
+  ]
+}

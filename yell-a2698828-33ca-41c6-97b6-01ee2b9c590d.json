@@ -1,0 +1,8 @@
+{
+  "id": "a2698828-33ca-41c6-97b6-01ee2b9c590d",
+  "name": "yell",
+  "prefix": "yell",
+  "description": "Vent your frustration",
+  "body": "/*\n\n  AAAA   AAAA   AAAA   AAAA  RRRRR   GGGG  HH  HH  ######\n AA  AA AA  AA AA  AA AA  AA RR  RR GG  GG HH  HH  ######\n AA  AA AA  AA AA  AA AA  AA RR  RR GG     HH  HH   ####\n AAAAAA AAAAAA AAAAAA AAAAAA RRRRR  GG GGG HHHHHH    ##\n AA  AA AA  AA AA  AA AA  AA RR  RR GG  GG HH  HH\n AA  AA AA  AA AA  AA AA  AA RR  RR  GGG G HH  HH    ##\n\n*/",
+  "placeholders": []
+}

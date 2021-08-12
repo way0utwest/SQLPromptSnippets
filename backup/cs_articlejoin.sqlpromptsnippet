@@ -12,9 +12,9 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[Articles as ars
-inner join Contacts
-on ars.AuthorID = ContactsID]]></Code>
+      <Code Language="sql"><![CDATA[dbo.Articles as ars
+inner join dbo.Contacts  as cntc
+on ars.AuthorID = cntc.ContactsID]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

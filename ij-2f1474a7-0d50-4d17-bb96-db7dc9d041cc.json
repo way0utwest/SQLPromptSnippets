@@ -1,0 +1,8 @@
+{
+  "id": "2f1474a7-0d50-4d17-bb96-db7dc9d041cc",
+  "name": "ij",
+  "prefix": "ij",
+  "description": "INNER JOIN fragment",
+  "body": "INNER JOIN ",
+  "placeholders": []
+}

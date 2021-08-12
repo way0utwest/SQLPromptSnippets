@@ -20,7 +20,7 @@
         <Literal>
           <ID>MyTable</ID>
           <ToolTip />
-          <Default>dbo</Default>
+          <Default></Default>
         </Literal>
       </Declarations>
       <Code Language="sql"><![CDATA[CREATE TABLE $schema$.$MyTable$ (

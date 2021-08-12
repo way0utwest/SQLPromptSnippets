@@ -1,0 +1,8 @@
+{
+  "id": "71ccca48-4548-4766-af44-17d85d9bc6b6",
+  "name": "ing04_table",
+  "prefix": "ing04_table",
+  "description": "Table alter",
+  "body": "ADD DiscountAmount NUMERIC(5,2)",
+  "placeholders": []
+}
