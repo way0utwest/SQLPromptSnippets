@@ -1,0 +1,12 @@
+{
+  "id": "12e9ddce-bf94-4731-a8da-bc992c1dadf9",
+  "prefix": "demostatic",
+  "description": "insert static data into shippers",
+  "body": " INSERT dbo.Shippers\r\n   (CompanyName, Phone, id, ShipId)\r\n VALUES\r\n   (N'$customer$', '505-555-1212', 51, 51) ",
+  "placeholders": [
+    {
+      "name": "customer",
+      "defaultValue": "Redgate Software"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "b52dc738-8ae2-4093-8293-40497a8e02cd",
+  "prefix": "mp",
+  "description": "Make Proc",
+  "body": "create procedure $procname$\r\n\t$param1$ $paramdt$\r\nas\r\nbegin\r\n  $SELECTEDTEXT$\r\nend\r\ngo\r\n",
+  "placeholders": [
+    {
+      "name": "procname",
+      "defaultValue": "myproc"
+    },
+    {
+      "name": "param1",
+      "defaultValue": "id"
+    },
+    {
+      "name": "paramdt",
+      "defaultValue": "int"
+    }
+  ]
+}

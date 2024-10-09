@@ -1,0 +1,6 @@
+{
+  "id": "97c44ec9-68a3-4489-bc4b-0a2ed718165a",
+  "prefix": "SteveSnippet",
+  "description": "my own",
+  "body": "create procedure GetOne \r\nas\r\nselect 1"
+}

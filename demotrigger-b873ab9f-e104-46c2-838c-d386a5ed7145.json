@@ -1,0 +1,6 @@
+{
+  "id": "b873ab9f-e104-46c2-838c-d386a5ed7145",
+  "prefix": "demotrigger",
+  "description": "create a trigger on order details",
+  "body": "CREATE TRIGGER OrderDetails_TRUI ON dbo.[Order Details] FOR INSERT, UPDATE\r\nAS\r\nBEGIN\r\n    UPDATE dbo.[Order Details]\r\n\t SET LineTotal = (i.UnitPrice * i.Quantity) - (i.UnitPrice * i.Quantity * i.Discount)\r\n\t FROM inserted i\r\n\t WHERE i.OrderID = [Order Details].OrderID\r\n\t AND i.ProductID = [Order Details].ProductID\r\nEND"
+}
